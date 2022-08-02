@@ -9,8 +9,8 @@ class Home extends React.Component {
             <div name='home' className='home px-5 align-items-center justify-content-center ' >
                 <div className="container d-flex justify-content-center align-items-center h-100">
                     <div className="row">
-                        <div className="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-6 col-xxl-6 d-flex align-items-center justify-content-center h-100">
-                            <div className=''>
+                        <div className="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-6 col-xxl-6 d-flex align-items-center justify-content-center">
+                            <div>
                                 <h1 className='fw-bolder text-white' >
                                     IM FULL STACK DEVELOPER
                                 </h1>
