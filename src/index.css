@@ -1,13 +1,44 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Anek+Latin:wght@600&family=Anton&family=Pacifico&display=swap');
+:root {
+  --header-color: #949494;
+  --body--color:#D6D5CB;
+}
+*{
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
+}
+.name{
+  color: whitesmoke;
+  font-family: 'Pacifico', cursive;
+  cursor: pointer;
+}
+li{
+  color: var(--header-color);
+  font-weight: 900;
+  list-style: none;
+  padding-left: 1rem;
+  cursor: pointer;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.bars{
+  z-index: 500;
+  cursor: pointer;
+  color: var(--header-color);
+}
+.active{
+  background-color: #0a192f ;
+}
+li:hover{
+  color: whitesmoke;
+}
+.home{
+  background: linear-gradient(to bottom , black , rgb(78, 76, 76));
+  height: 100vh;
+  color: whitesmoke;
+}
+.btnPortfolio{
+  font-family: 'Pacifico', cursive;
+  background: linear-gradient(to bottom , black , rgb(78, 76, 76)) !important;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
