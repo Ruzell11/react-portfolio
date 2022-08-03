@@ -6,7 +6,6 @@ class SocialMedia extends React.Component {
     handleColor = () => {
         console.log(this.Icons)
     }
-
     Icons = [
         {
             id: 1,
@@ -27,9 +26,6 @@ class SocialMedia extends React.Component {
             background: '#4267B2'
         }
     ]
-
-
-
     render() {
         return (
             <>
