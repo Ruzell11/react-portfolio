@@ -60,10 +60,8 @@
 
 }
 .icons:hover{
-
   transform: translate(0px , 0px);
   transition: .3s ease-in;
-
 }
 .navMobile{
   z-index: 500;

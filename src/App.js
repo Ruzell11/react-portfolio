@@ -12,10 +12,7 @@ class App extends React.Component {
         <NavBar />
         <Home />
         <SocialMedia />
-      </div>
-
-
-
+        </div>
     )
   }
 }

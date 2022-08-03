@@ -40,7 +40,7 @@ class Navbar extends React.Component {
         }
     ]
 
-    render() {
+    render(props) {
         return (
             <div className='d-flex justify-content-between align-items-center p-4 nav' style={{ backgroundColor: 'black' }}>
                 <div className="logo mt-2">
@@ -51,7 +51,7 @@ class Navbar extends React.Component {
                             {this.links.map(({id , link}) => {
                                 return (
                                     <>
-                                        <li key={id} className='nav-link text-secondary fw-bolder fs-5 pe-auto'>{link} </li>
+                                        <li key={id} className='nav-link text-secondary fw-bolder fs-5 pe-auto' style={{cursor:'pointer'}}>{link} </li>
                                     </>
                                 )
                             })}
@@ -64,15 +64,15 @@ class Navbar extends React.Component {
                 <ul className={!this.state.navbar ? 'd-none' :
                     'position-absolute top-0 start-0  d-flex justify-content-center align-items-center flex-column d-md-flex d-sm-flex d-lg-none d-xxl-none d-xl-none w-100 navMobile'
                 } style={{ marginTop:'5rem'}}>
-                    <div onClick={this.handleClick}>
+                
                     {this.links.map(({id , link}) => {
                                 return (
                                     <>
-                                        <li key={id} className='fs-3 py-4 nav-link text-secondary'>{link}</li>
+                                        <li key={id} className='fs-3 py-2 nav-link text-secondary' onClick={this.handleClick}>{link}</li>
                                     </>
                                 )
                             })}
-                    </div>
+                    
                 </ul>
             </div>
         )
