@@ -8,7 +8,6 @@ class Navbar extends React.Component {
         super();
         this.state = {
             navbar: false,
-            show: false
         }
     }
     // setting previous state
@@ -22,6 +21,10 @@ class Navbar extends React.Component {
             id: 1,
             link: 'Home'
         },
+        {   
+            id:5,
+            link:'About'
+        },
         {
             id: 2,
             link: 'Skills'
@@ -30,6 +33,7 @@ class Navbar extends React.Component {
             id: 3,
             link: 'Project'
         },
+      
         {
             id: 4,
             link: 'Contact'
@@ -38,7 +42,7 @@ class Navbar extends React.Component {
 
     render() {
         return (
-            <div className='d-flex justify-content-between align-items-center p-4 nav position-fixed w-100' style={{ backgroundColor: 'black' }}>
+            <div className='d-flex justify-content-between align-items-center p-4 nav' style={{ backgroundColor: 'black' }}>
                 <div className="logo mt-2">
                     <h2 className='name'>JRUZEll</h2>
                 </div>
@@ -47,7 +51,7 @@ class Navbar extends React.Component {
                             {this.links.map(({id , link}) => {
                                 return (
                                     <>
-                                        <li key={id}>{link}</li>
+                                        <li key={id} className='nav-link text-secondary fw-bolder fs-5 pe-auto'>{link} </li>
                                     </>
                                 )
                             })}
@@ -58,13 +62,13 @@ class Navbar extends React.Component {
                 </div>
 
                 <ul className={!this.state.navbar ? 'd-none' :
-                    'position-absolute top-0 start-0  d-flex justify-content-center align-items-center flex-column d-md-flex d-sm-flex d-lg-flex d-xxl-none d-xl-none'
-                } style={{ backgroundColor: 'black', height:'100vh', width:'100vw'}}>
+                    'position-absolute top-0 start-0  d-flex justify-content-center align-items-center flex-column d-md-flex d-sm-flex d-lg-none d-xxl-none d-xl-none w-100 navMobile'
+                } style={{ marginTop:'5rem'}}>
                     <div onClick={this.handleClick}>
                     {this.links.map(({id , link}) => {
                                 return (
                                     <>
-                                        <li key={id} className='fs-3 py-4'>{link}</li>
+                                        <li key={id} className='fs-3 py-4 nav-link text-secondary'>{link}</li>
                                     </>
                                 )
                             })}

@@ -2,6 +2,7 @@
 :root {
   --header-color: #949494;
   --body--color:#D6D5CB;
+  --bg-html:linear-gradient(to bottom , black , rgb(78, 76, 76));
 }
 *{
   margin: 0;
@@ -13,14 +14,7 @@
   font-family: 'Pacifico', cursive;
   cursor: pointer;
 }
-li{
-  color: var(--header-color);
-  font-weight: 900;
-  list-style: none;
-  padding-left: 1rem;
-  cursor: pointer;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
+
 .bars{
   z-index: 500;
   cursor: pointer;
@@ -29,16 +23,48 @@ li{
 .active{
   background-color: #0a192f ;
 }
-li:hover{
-  color: whitesmoke;
+.nav-link:hover{
+  color: whitesmoke !important;
+
 }
 .home{
-  background: linear-gradient(to bottom , black , rgb(78, 76, 76));
+  background: var(--bg-html);
   height: 100vh;
   color: whitesmoke;
 }
 .btnPortfolio{
   font-family: 'Pacifico', cursive;
-  background: linear-gradient(to bottom , black , rgb(78, 76, 76)) !important;
+  background: var(--bg-html);
 }
+::-webkit-scrollbar {
+  width: 20px;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--bg-html);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: gray !important;
+}
+.navMobile{
+  background: var(--bg-html);
+}
+.iconsDiv{
+  top: 30%;
+  left: 0%;
 
+}
+.icons{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  cursor: pointer;
+  transform: translate(-110px , 0px);
+
+}
+.icons:hover{
+
+  transform: translate(0px , 0px);
+  transition: .3s ease-in;
+
+}
+.navMobile{
+  z-index: 500;
+}
