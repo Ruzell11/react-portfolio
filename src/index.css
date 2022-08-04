@@ -3,12 +3,14 @@
   --header-color: #949494;
   --body--color:#D6D5CB;
   --bg-html:linear-gradient(to bottom , black , rgb(78, 76, 76));
+  --bg-html2:linear-gradient(to bottom , rgb(78, 76, 76) ,black );
 }
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
 .name{
   color: whitesmoke;
   font-family: 'Pacifico', cursive;
@@ -28,8 +30,12 @@
 
 }
 .home{
-  background: var(--bg-html);
+  background: var(--bg-html) !important;
   height: 100vh;
+  color: whitesmoke;
+}
+.About{
+  background: var(--bg-html2);
   color: whitesmoke;
 }
 .btnPortfolio{

@@ -8,9 +8,9 @@ class Home extends React.Component {
             <div name='home' id='home' className='home px-5 align-items-center justify-content-center'>
                 <div className="container d-flex justify-content-center align-items-center" style={{height:'80vh'}}>
                     <div className="row">
-                        <div className="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-6 col-xxl-6 d-flex align-items-center justify-content-center">
+                        <div className="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-7 col-xxl-7 d-flex align-items-center justify-content-center">
                             <div>
-                                <h1 className='fw-bolder text-white mt-5'>
+                                <h1 className='fw-bold text-white mt-5' style={{fontSize:'5.2vw'}}>
                                     I'm a Full Stack Developer
                                 </h1>
                                 <p className='text-secondary fs-4 my-3'>
@@ -19,7 +19,7 @@ class Home extends React.Component {
                                 <button className='btn btnPortfolio rounded text-white fs-5 fw-light mb-3' style={{ width: '15rem' }}>Portfolio</button>
                             </div>
                         </div>
-                        <div className='col-12 col-sm-12 col-md-12 col-lg-12 col-xl-6 col-xxl-6 d-flex justify-content-center align-items-center'>
+                        <div className='col-12 col-sm-12 col-md-12 col-lg-12 col-xl-5 col-xxl-5 d-flex justify-content-center align-items-center'>
                             <img src={Blank} alt="" className='img-fluid' />
                         </div>
                     </div>
