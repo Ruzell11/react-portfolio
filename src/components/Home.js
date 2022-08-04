@@ -1,22 +1,16 @@
 import React from 'react'
 import Blank from '../assets/blank.jpg'
 import { AiOutlineRight } from 'react-icons/ai';
-
-
-
-
 class Home extends React.Component {
-    closeNav = () =>{
-            this.props.deleteHandler()
-    }
+    
     render() {
         return (
-            <div name='home' id='home' className='home px-5 align-items-center justify-content-center' onClick={this.closeNav}>
+            <div name='home' id='home' className='home px-5 align-items-center justify-content-center'>
                 <div className="container d-flex justify-content-center align-items-center" style={{height:'80vh'}}>
                     <div className="row">
                         <div className="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-6 col-xxl-6 d-flex align-items-center justify-content-center">
                             <div>
-                                <h1 className='fw-bolder text-white '>
+                                <h1 className='fw-bolder text-white mt-5'>
                                     I'm a Full Stack Developer
                                 </h1>
                                 <p className='text-secondary fs-4 my-3'>

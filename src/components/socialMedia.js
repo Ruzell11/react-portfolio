@@ -11,19 +11,16 @@ class SocialMedia extends React.Component {
             id: 1,
             icon: <BsFacebook />,
             text: 'Facebook',
-            background: 'blue'
         },
         {
             id: 2,
             icon: <BsGithub />,
             text: 'Github',
-            background: 'black'
         },
         {
             id: 3,
             icon: <BsLinkedin />,
             text: 'Linkedin',
-            background: '#4267B2'
         }
     ]
     render() {

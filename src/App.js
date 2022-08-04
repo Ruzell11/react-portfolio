@@ -1,18 +1,22 @@
 import React from 'react';
 import Home from './components/Home';
-
-import NavBar from './components/Navbar';
 import SocialMedia from './components/socialMedia';
+import About from './components/About';
 
 
 
 class App extends React.Component {
+  closeNav = () =>{
+    this.props.deleteHandler()
+}
   render() {
     return (
-      <div>
-        <NavBar />
+      <div  onClick={this.closeNav}>
+        <Home />
         <SocialMedia />
+        <About />
         </div>
+        
     )
   }
 }

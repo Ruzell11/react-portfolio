@@ -4,12 +4,12 @@ import { FaBars, FaTimes } from 'react-icons/fa'
 import OutsideClickHandler from 'react-outside-click-handler';
 import Home from '../components/Home';
 import PropTypes from 'prop-types'
+import App from '../App';
 
 
 class Navbar extends React.Component {
     constructor(props) {
         super(props);
-        this.myRef = React.createRef(null);
         this.state = {
             navbar: false,
         }
@@ -83,10 +83,9 @@ class Navbar extends React.Component {
                             })}
                         </ul>
                         </div>  
-                        <Home deleteHandler={this.handleClose}/>   
+                       <App  deleteHandler={this.handleClose} />
             </div>
         )
     }
 }
-
 export default Navbar;
