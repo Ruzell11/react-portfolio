@@ -4,6 +4,7 @@ import SocialMedia from './components/socialMedia';
 import About from './components/About';
 import Skills from './components/Skills';
 import ScrollToTop from "react-scroll-to-top"
+import Project from './components/Project'
 
 
 
@@ -20,6 +21,7 @@ class App extends React.Component {
         <SocialMedia />
         <About />
         <Skills />
+        <Project />
       </div>
 
     )

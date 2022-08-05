@@ -1,6 +1,5 @@
 import React from 'react';
-import Creative from '../assets/creative.jpg'
-import Creative1 from '../assets/creative1.png'
+import Creative1 from './Data/assets/creative1.png'
 
 class About extends React.Component {
     render() {

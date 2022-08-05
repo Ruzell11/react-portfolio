@@ -35,7 +35,7 @@ class SocialMedia extends React.Component {
     render() {
         return (
             <>
-                <div className='position-fixed iconsDiv d-flex flex-column' style={{ width: '10rem' }} >
+                <div className='position-fixed iconsDiv d-flex flex-column ' style={{ width: '10rem' }} >
                     {this.Icons.map(({id , icon , text , link}) =>{
                         return(
                             <>

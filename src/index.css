@@ -11,6 +11,7 @@
   box-sizing: border-box;
 }
 
+
 .name{
   color: whitesmoke;
   font-family: 'Pacifico', cursive;
@@ -43,6 +44,9 @@
   background: var(--bg-html);
   color: whitesmoke;
 }
+.projects{
+  background: var(--bg-html2);
+}
 .btnPortfolio{
   font-family: 'Pacifico', cursive;
   background: var(--bg-html);
@@ -62,6 +66,7 @@
 .iconsDiv{
   top: 30%;
   left: 0%;
+  z-index: 500;
 
 }
 .icons{
@@ -79,5 +84,10 @@
 }
 .pict:hover{
   box-shadow: none !important;
-  transition: .3s ease-in;
+  transition: .5s ease-in;
+}
+.picturePict:hover{
+  transform: scale(1.2);
+  box-shadow: none !important;
+  transition: .5s ease-in;
 }

@@ -1,6 +1,6 @@
 import React from 'react'
-import Blank from '../assets/blank.jpg'
-import { AiOutlineRight } from 'react-icons/ai';
+import Blank from './Data/assets/blank.jpg'
+
 class Home extends React.Component {
     
     render() {
