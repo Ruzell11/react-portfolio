@@ -59,14 +59,14 @@ class Skills extends React.Component {
     ]
     render() {
         return (
-            <div name='skills' className='skills py-5 d-flex justify-content-center flex-column align-items-center ' >
+            <div name='skills' className='skills d-flex justify-content-center flex-column align-items-center ' >
+                
+                <div className="container d-flex  justify-content-center align-items-center flex-column py-5 mt-5 h-100 " >
                 <div className='heading'>
                     <h1 className='fw-bolder'>Skills</h1>
                 </div>
-                <div className="container d-flex  justify-content-center align-items-center " >
-                
                     <div className="row row-cols-3">
-                        <div class="col-12 col-md-12  text-center my-3 ">
+                        <div class="col-12 col-md-12  text-center my-1 ">
                             {this.skills.map(({ id, logo, boxShadow }) => {
                                 return (
                                     
