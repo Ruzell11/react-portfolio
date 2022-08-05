@@ -1,9 +1,7 @@
 import React from 'react';
 import { FaBars, FaTimes } from 'react-icons/fa'
 import App from '../App';
-import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
-import Home from './Home';
-import About from './About';
+import {Link} from 'react-scroll'
 
 
 class Navbar extends React.Component {
@@ -30,38 +28,38 @@ class Navbar extends React.Component {
             id: 1,
             link: 'Home',
             to: 'home',
-            path: '/',
-            element: <Home />
+            path: '/'
+            
         },
         {
             id: 5,
             link: 'About',
             to: 'about',
-            path: '/about',
-            element: <About />
+            path: '/about'
+            
 
         },
         {
             id: 2,
             link: 'Skills',
             to: 'skills',
-            path: '/skills',
-            element: <Home />
+            path: '/skills'
+            
         },
         {
             id: 3,
             link: 'Project',
             to: 'project',
-            path: '/project',
-            element: <Home />
+            path: '/project'
+            
         },
 
         {
             id: 4,
             link: 'Contact',
             to: 'contact',
-            path: '/contact',
-            element: <Home />
+            path: '/contact'
+            
 
         }
     ]
@@ -82,25 +80,19 @@ class Navbar extends React.Component {
                                 return (
                                     
                                     <>
-                                    {/* <Router> */}
-                                        <li key={id} className='nav-link text-secondary fw-bolder fs-5 pe-auto' style={{ cursor: 'pointer' }}>{link}
+                                   
+                                        <li key={id} className='nav-link text-secondary fw-bolder fs-5 pe-auto' style={{ cursor: 'pointer' }}>
                                         
-                                        {/* <Link to={to} path={path} smooth duration={500}>{link}</Link> */}
-                                      
-                                    
-                                      
+                                        <Link to={to} smooth duration={300}>
+                                        {link}
+                                        </Link>
                                          </li>
-                                         {/* </Router> */}
-                                  
                                         
-                                        
-                                       
                                     </>
                                     
                                 )
                             })}
                         </ul>
-                        
                     </div>
                     {/* mobile */}
                     <div onClick={this.handleClick} className='d-flex d-md-flex d-sm-flex d-lg-none d-xxl-none d-xl-none bars' >
@@ -109,10 +101,14 @@ class Navbar extends React.Component {
                     <ul className={!this.state.navbar ? 'd-none' :
                         'position-absolute top-0 start-0  d-flex justify-content-center align-items-center flex-column d-md-flex d-sm-flex d-lg-none d-xxl-none d-xl-none w-100 navMobile'
                     } style={{ marginTop: '5rem' }}>
-                        {this.links.map(({ id, link }) => {
+                        {this.links.map(({ id, link , to }) => {
                             return (
                                 <>
-                                    <li key={id} className='fs-3 py-2 nav-link text-secondary' onClick={this.handleClick} style={{ cursor: 'pointer' }}>{link}</li>
+                                    <li key={id} className='fs-3 py-2 nav-link text-secondary' onClick={this.handleClick} style={{ cursor: 'pointer' }}>
+                                    <Link to={to} smooth duration={300}>
+                                        {link}
+                                        </Link>
+                                    </li>
                                 </>
                             )
                         })}

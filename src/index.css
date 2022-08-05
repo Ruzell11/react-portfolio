@@ -31,11 +31,16 @@
 }
 .home{
   background: var(--bg-html) !important;
-  height: 100vh;
   color: whitesmoke;
+  height: 100vh;
 }
 .about{
   background: var(--bg-html2);
+  color: whitesmoke;
+  height: 100vh;
+}
+.skills{
+  background: var(--bg-html);
   color: whitesmoke;
 }
 .btnPortfolio{
@@ -71,4 +76,8 @@
 }
 .navMobile{
   z-index: 500;
+}
+.pict:hover{
+  box-shadow: none !important;
+  transition: .3s ease-in;
 }
