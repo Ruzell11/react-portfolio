@@ -7,7 +7,7 @@ import bootstrap from '../assets/bootstrap.png'
 import reactLogo from '../assets/react.png'
 import php from '../assets/php.png'
 import sql from '../assets/mysql.png'
-import ScrollToTop from "react-scroll-to-top"
+
 
 
 
@@ -61,7 +61,7 @@ class Skills extends React.Component {
         return (
             <div name='skills' className='skills py-5 d-flex justify-content-center flex-column align-items-center ' >
                 <div className='heading'>
-                    <h1>Skills</h1>
+                    <h1 className='fw-bolder'>Skills</h1>
                 </div>
                 <div className="container d-flex  justify-content-center align-items-center " >
                 
