@@ -16,7 +16,7 @@ class App extends React.Component {
     return (
 
       <div onClick={this.closeNav}>
-        <ScrollToTop smooth top="30" className='bg-white' />
+        <ScrollToTop smooth top="30" className='bg-white scrollTop' />
         <Home />
         <SocialMedia />
         <About />

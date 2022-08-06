@@ -13,7 +13,6 @@
 html , body{
   overflow-x: hidden !important;
 }
-
 .name{
   color: whitesmoke;
   font-family: 'Pacifico', cursive;
@@ -49,7 +48,7 @@ html , body{
 .projects{
   background: var(--bg-html2);
 }
-.btnPortfolio{
+.btnPortfolio {
   font-family: 'Pacifico', cursive;
   background: var(--bg-html);
 }
@@ -75,7 +74,6 @@ html , body{
   font-family: Georgia, 'Times New Roman', Times, serif;
   cursor: pointer;
   transform: translate(-110px , 0px);
-
 }
 .icons:hover{
   transform: translate(0px , 0px);
@@ -92,4 +90,20 @@ html , body{
   transform: scale(1.2);
   box-shadow: none !important;
   transition: .5s ease-in;
+}
+.skills-picture{
+  display: grid !important;
+  grid-template-columns: repeat(auto-fit , minmax(300px , 1fr)) !important ;
+  gap: 50px;
+  justify-content: center;
+}
+.scrollTop:hover{
+  background-color: blanchedalmond !important;
+}
+.technologies:hover{
+  color: whitesmoke !important;
+  cursor: pointer;
+}
+.projectTitle{
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
 }

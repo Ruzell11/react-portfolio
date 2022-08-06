@@ -1,5 +1,6 @@
 import React from 'react'
 import Blank from './Data/assets/blank.jpg'
+import {Link} from 'react-scroll'
 
 class Home extends React.Component {
     
@@ -16,7 +17,9 @@ class Home extends React.Component {
                                 <p className='text-secondary fs-4 my-3'>
                                     I like coding things from scratch! I enjoy bringing my ideas to life. Languages I Speak HTML, CSS, Javascript , React Dev Tools VSCode Bootstrap GitHub
                                 </p>
+                                <Link to='project'>
                                 <button className='btn btnPortfolio rounded text-white fs-5 fw-light mb-3' style={{ width: '15rem' }}>Portfolio</button>
+                                </Link>
                             </div>
                         </div>
                         <div className='col-12 col-sm-12 col-md-12 col-lg-12 col-xl-5 col-xxl-5 d-flex justify-content-center align-items-center'>

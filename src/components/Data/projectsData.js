@@ -12,51 +12,59 @@ export default [
         id:1,
         picture:project1,
         link:'https://ruzell11.github.io/first-ecommerce/',
-        projectTitle:'Static Ecommerce Website'
+        projectTitle:'Static Ecommerce Website',
+        Technologies:'html , css , bootstrap'
 
     },
     {
         id:2,
         picture:project2,
         link:'https://ruzell11.github.io/pokedex/',
-        projectTitle:'Pokedex'
+        projectTitle:'Pokedex',
+        Technologies:'React ,  bootstrap , css'
     },
     
     {
         id:3,
         picture:project3,
         link:'https://ruzell11.github.io/pokemon-card-generator/',
-        projectTitle:'Pokemon Card Generator'
+        projectTitle:'Pokemon Card Generator',
+        Technologies:'javascript ,  html , css'
     },
     {
         id:4,
         picture:project4,
         link:'https://ruzell11.github.io/sticky-note/',
-        projectTitle:'Sticky Note'
+        projectTitle:'Sticky Note',
+        Technologies:'html , css , javascript'
     },
     {
         id:5,
         picture:project5,
         link:'',
-        projectTitle:'Meme Generator'
+        projectTitle:'Meme Generator',
+        Technologies:' react , css , bootstrap'
     },
     {
         id:6,
         picture:project6,
         link:'https://ruzell11.github.io/movie-app/',
-        projectTitle:'Movie App'
+        projectTitle:'Movie App',
+        Technologies:'react , css , bootstrap'
     },
     {
         id:7,
         picture:project7,
         link:'https://ruzell11.github.io/simple-design-responsive-bootstrap/',
-        projectTitle:'Simple Website'
+        projectTitle:'Simple Website',
+        Technologies:'html , css , bootstrap'
     },
     {
         id:8,
         picture:project8,
         link:'https://ruzell11.github.io/pokemon-landing-page/#',
-        projectTitle:'Pokemon Landing Page'
+        projectTitle:'Pokemon Landing Page',
+        Technologies:'Material UI , bootstrap , javascript , html , css'
     },
     
 ]
