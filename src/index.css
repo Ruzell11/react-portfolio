@@ -31,20 +31,17 @@ html , body{
   color: whitesmoke !important;
 
 }
-.home{
+.home , .skills , .contact{
   background: var(--bg-html) !important;
   color: whitesmoke;
-  height: 100vh;
+  min-height: 100vh;
 }
 .about{
   background: var(--bg-html2);
   color: whitesmoke;
   height: 100vh;
 }
-.skills{
-  background: var(--bg-html);
-  color: whitesmoke;
-}
+
 .projects{
   background: var(--bg-html2);
 }
@@ -107,3 +104,6 @@ html , body{
 .projectTitle{
   font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
+
+/*  */
+

@@ -5,6 +5,7 @@ import About from './components/About';
 import Skills from './components/Skills';
 import ScrollToTop from "react-scroll-to-top"
 import Project from './components/Project'
+import Contact from './components/Contact'
 
 
 
@@ -22,6 +23,7 @@ class App extends React.Component {
         <About />
         <Skills />
         <Project />
+        <Contact />
       </div>
 
     )
