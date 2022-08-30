@@ -40,16 +40,6 @@ import sql from './assets/mysql.png'
         id: 6,
         logo: reactLogo,
         boxShadow:'5px 10px #87cefa'
-    },
-    {
-        id: 7,
-        logo: php,
-        boxShadow:'5px 10px #4f5b93'
-    },
-    {
-        id: 8,
-        logo: sql,
-        boxShadow:'5px 10px #f29111'
     }
 ]
 
